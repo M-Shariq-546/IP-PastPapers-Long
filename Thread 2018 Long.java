@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 class MyThread extends Thread{
     private int n ;
     
@@ -20,9 +23,10 @@ class MyThread extends Thread{
 
 class MyThreading{
     public static void main(String[] args){
-        int n =100;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int n = scanner.nextInt();
         MyThread myth= new MyThread(n);
-        
         myth.start();
 
     }
