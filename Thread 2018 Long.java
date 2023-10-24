@@ -9,13 +9,13 @@ class MyThread extends Thread{
     }
     @Override
     public void run(){
-        if(n%2==0){
+        if(n>0){
             for(int i =0 ; i<=n ; i+=1){
                 System.out.println("All Numbers from the given "+ n +" are: "+ i +"\n");
             }
         }
         else{
-            System.out.println("Sorry you Entered the Wrong Input.");
+            System.out.println("Sorry you Entered the negative Input.");
             }
         }
     }
